@@ -102,3 +102,29 @@ test('paypal', async ({ page }) => {
     await page.goto('https://www.paypal.com/unifiedonboarding/entry?country.x=US&locale.x=en_US');
     await page.locator('h2 >> text=Create a business account').waitFor({ state: 'visible' });
 });
+
+test('allegro', async ({ page }) => {
+    await page.goto('https://allegro.pl/');
+    await sleep(1500);
+    for (let i = 0; i < 10; i++) {
+        await page.mouse.wheel(0, 200);
+        await sleep(800);
+    }
+
+    const pageResponsePromise = page.waitForResponse((response) =>
+        response
+            .url()
+            .includes(
+                'https://allegro.pl/oferta/filtr-do-odkurzacza-miele-boost-cx1-allergy-cat-dog-11639250-17115428549'
+            )
+    );
+    await page
+        .goto('https://allegro.pl/oferta/filtr-do-odkurzacza-miele-boost-cx1-allergy-cat-dog-11639250-17115428549')
+        .catch(() => {
+            // no-op
+        });
+
+    const pageResponse = await pageResponsePromise;
+    const pageResponseText = await pageResponse.text();
+    expect(/"price":\s*"[\d,]+/.test(pageResponseText)).toBeTruthy();
+});
