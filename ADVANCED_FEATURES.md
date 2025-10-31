@@ -259,6 +259,7 @@ Comprehensive hardware emulation and fingerprint management.
 - Authentic CPU core count and timing
 - Realistic performance characteristics
 - Hardware concurrency simulation
+- JavaScript & WebAssembly parity across baseline, Turbo, and SIMD pipelines so architecture sniffing funnels into the same curated signature
 
 **Screen and Display Control:**
 - Device pixel ratio emulation
