@@ -85,6 +85,7 @@ Our testing extends to major e-commerce platforms and popular websites to demons
 |-------------------|--------------|
 | **[Temu](tests/tests/websites/temu.spec.ts)** | [▶️ Temu Shopping](//botswin.github.io/BotBrowser/video_player/index.html?video=websites-temu-temu) |
 | **[Shopee](tests/tests/websites/shopee.spec.ts)** | [▶️ Shopee Category Browse](//botswin.github.io/BotBrowser/video_player/index.html?video=websites-shopee-shopee) |
+| **[Naver](tests/tests/websites/naver.spec.ts)** | [▶️ Product Detail Page](//botswin.github.io/BotBrowser/video_player/index.html?video=websites-naver-naver) |
 | **[Walmart](tests/tests/websites/walmart.spec.ts)** | [▶️ Product Page](//botswin.github.io/BotBrowser/video_player/index.html?video=websites-walmart-walmart) |
 | **[Nike](tests/tests/websites/nike.spec.ts)** | [▶️ Checkout Process](//botswin.github.io/BotBrowser/video_player/index.html?video=websites-nike-checkout) |
 | **[Ticketmaster](tests/tests/websites/ticketmaster.spec.ts)** | [▶️ Ticket Checkout](//botswin.github.io/BotBrowser/video_player/index.html?video=websites-ticketmaster-checkout) |
