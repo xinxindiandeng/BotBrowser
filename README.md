@@ -41,11 +41,24 @@ Designed for automation testing, cross-platform compatibility validation, and ma
 
 > **What makes BotBrowser different:** Cross-platform browser with unified fingerprint technology that keeps fingerprints identical everywhere.
 
-| **Core Advantages** | **Technical Excellence** |
-|---------------------|-------------------------|
-| **High-fidelity Profile Simulation** - Synthetic/aggregated profiles for realistic, policy-compliant testing | **Latest Chromium Base** - Always synced to newest stable Chrome for zero fingerprint drift |
-| **Zero-Config Intelligence** - Auto-detects timezone/locale/language from IP | **Advanced Programmatic Control** - [Playwright/Puppeteer integration](examples/) with CDP leak blocking |
-| **Network Stack Parity** - Browser-level proxies keep geo signals consistent (ENT Tier3 feature) | **Full-Proxy QUIC/STUN** - Chromium-level UDP associate keeps QUIC/STUN proxied; ICE presets only needed when UDP is unavailable (ENT Tier3 feature, see [Network Fingerprint Control](ADVANCED_FEATURES.md#network-fingerprint-control)) |
+<table>
+  <tr>
+    <th style="width:50%;">Core Advantages</th>
+    <th style="width:50%;">Technical Excellence</th>
+  </tr>
+  <tr>
+    <td><strong>High-fidelity Profile Simulation</strong> – Synthetic/aggregated profiles for realistic, policy-compliant testing</td>
+    <td><strong>Latest Chromium Base</strong> – Always synced to newest stable Chrome for zero fingerprint drift</td>
+  </tr>
+  <tr>
+    <td><strong>Zero-Config Intelligence</strong> – Auto-detects timezone/locale/language from IP</td>
+    <td><strong>Advanced Programmatic Control</strong> – <a href="examples/">Playwright/Puppeteer integration</a> with CDP leak blocking</td>
+  </tr>
+  <tr>
+    <td><strong>Network Stack Parity</strong> – Browser-level proxies keep geo signals consistent (ENT Tier3 feature)</td>
+    <td><strong>Full-Proxy QUIC/STUN</strong> – Chromium-level UDP associate keeps QUIC/STUN proxied; ICE presets only needed when UDP is unavailable (ENT Tier3 feature, see <a href="ADVANCED_FEATURES.md#network-fingerprint-control">Network Fingerprint Control</a>)</td>
+  </tr>
+</table>
 
 ### 📱 Cross-Platform Fingerprint Consistency
 
@@ -182,11 +195,32 @@ Our compatibility research examines browser fingerprinting techniques across dif
 
 > ⚠️ Research demos in authorized environments. See [DISCLAIMER](DISCLAIMER.md).
 
-| Service | Demo | Service | Demo |
-|---------|------|---------|------|
-| **[Cloudflare](tests/tests/antibots/cloudflare.spec.ts)** | [▶️ Turnstile Demo](//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-cloudflare-turnstile) | **[CreepJS](tests/tests/antibots/creepjs.spec.ts)** | [▶️ Desktop Test](//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-creepjs-creepjs) / [▶️ Android Profile](//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-creepjs-creepjs-Android) |
-| **[DataDome](tests/tests/antibots/datadome.spec.ts)** | [▶️ FIFA2026 Demo](//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-datadome-fifa) | **[FingerprintJS Pro](tests/tests/antibots/fingerprintjs.spec.ts)** | [▶️ Bot Detection](//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-fingerprintjs-botdetection) |
-| **[PerimeterX](tests/tests/antibots/perimeterx.spec.ts)** | [▶️ Zillow Demo](//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-perimeterx-zillow) | **[Pixelscan](tests/tests/antibots/pixelscan.spec.ts)** | [▶️ Comprehensive Scan](//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-pixelscan-pixelscan) |
+<table>
+  <tr>
+    <th style="width:20%;">Service</th>
+    <th style="width:30%;">Demo</th>
+    <th style="width:20%;">Service</th>
+    <th style="width:30%;">Demo</th>
+  </tr>
+  <tr>
+    <td><strong><a href="tests/tests/antibots/cloudflare.spec.ts">Cloudflare</a></strong></td>
+    <td><a href="//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-cloudflare-turnstile">▶️ Turnstile Demo</a></td>
+    <td><strong><a href="tests/tests/antibots/creepjs.spec.ts">CreepJS</a></strong></td>
+    <td><a href="//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-creepjs-creepjs">▶️ Desktop Test</a> / <a href="//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-creepjs-creepjs-Android">▶️ Android Profile</a></td>
+  </tr>
+  <tr>
+    <td><strong><a href="tests/tests/antibots/datadome.spec.ts">DataDome</a></strong></td>
+    <td><a href="//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-datadome-fifa">▶️ FIFA2026 Demo</a></td>
+    <td><strong><a href="tests/tests/antibots/fingerprintjs.spec.ts">FingerprintJS Pro</a></strong></td>
+    <td><a href="//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-fingerprintjs-botdetection">▶️ Bot Detection</a></td>
+  </tr>
+  <tr>
+    <td><strong><a href="tests/tests/antibots/perimeterx.spec.ts">PerimeterX</a></strong></td>
+    <td><a href="//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-perimeterx-zillow">▶️ Zillow Demo</a></td>
+    <td><strong><a href="tests/tests/antibots/pixelscan.spec.ts">Pixelscan</a></strong></td>
+    <td><a href="//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-pixelscan-pixelscan">▶️ Comprehensive Scan</a></td>
+  </tr>
+</table>
 
 ### Cross-Platform Validation
 - **Windows Profile on macOS:** Fingerprint consistency maintained
