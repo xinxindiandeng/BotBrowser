@@ -69,10 +69,10 @@ All appear as different users on the same device type.
 
 For academic institutions and authorized research:
 
-| Contact Method | Link |
-|----------------|------|
-| 📧 Email | [botbrowser@bk.ru](mailto:botbrowser@bk.ru) |
-| 📱 Telegram | [@botbrowser_support](https://t.me/botbrowser_support) |
+<table>
+  <tr><td>📧 Email</td><td><a href="mailto:botbrowser@bk.ru">botbrowser@bk.ru</a></td></tr>
+  <tr><td>📱 Telegram</td><td><a href="https://t.me/botbrowser_support">@botbrowser_support</a></td></tr>
+</table>
 
 Premium profiles are available to qualified academic institutions with proper ethical approvals.
 

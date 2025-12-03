@@ -43,10 +43,6 @@ Designed for automation testing, cross-platform compatibility validation, and ma
 
 <table cellspacing="0" cellpadding="8">
   <tr>
-    <th width="50%">Core Advantages</th>
-    <th width="50%">Technical Excellence</th>
-  </tr>
-  <tr>
     <td width="50%"><strong>High-fidelity Profile Simulation</strong> – Synthetic/aggregated profiles for realistic, policy-compliant testing</td>
     <td width="50%"><strong>Latest Chromium Base</strong> – Always synced to newest stable Chrome for zero fingerprint drift</td>
   </tr>
@@ -198,12 +194,6 @@ Our compatibility research examines browser fingerprinting techniques across dif
 
 <table cellspacing="0" cellpadding="8">
   <tr>
-    <th width="20%">Service</th>
-    <th width="30%">Demo</th>
-    <th width="20%">Service</th>
-    <th width="30%">Demo</th>
-  </tr>
-  <tr>
     <td width="20%"><strong><a href="tests/tests/antibots/cloudflare.spec.ts">Cloudflare</a></strong></td>
     <td width="30%"><a href="//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-cloudflare-turnstile">▶️ Turnstile Demo</a></td>
     <td width="20%"><strong><a href="tests/tests/antibots/creepjs.spec.ts">CreepJS</a></strong></td>
@@ -259,10 +249,10 @@ Our compatibility research examines browser fingerprinting techniques across dif
 
 ### 🆘 Support Channels
 
-| Contact Method | Best For | Link |
-|----------------|----------|------|
-| 📧 Email | Technical questions, source code access | [botbrowser@bk.ru](mailto:botbrowser@bk.ru) |
-| 📱 Telegram | Community support, quick questions | [@botbrowser_support](https://t.me/botbrowser_support) |
+<table>
+  <tr><td>📧 Email</td><td>Technical questions, source code access</td><td><a href="mailto:botbrowser@bk.ru">botbrowser@bk.ru</a></td></tr>
+  <tr><td>📱 Telegram</td><td>Community support, quick questions</td><td><a href="https://t.me/botbrowser_support">@botbrowser_support</a></td></tr>
+</table>
 
 ### 🏗️ Building from Source
 
