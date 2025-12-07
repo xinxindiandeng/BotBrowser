@@ -175,6 +175,7 @@ chromium --no-sandbox \
 - [x] **Set language and timezone** based on proxy or manually
 - [x] **WebRTC configuration control**
 - [x] **Canvas / WebGL noise injection** for consistency
+- [x] **DOM text renders from embedded fonts** so cross-OS simulations never fall through to host font files
 - [x] **Audio fingerprinting variation**
 - [x] **Control scroll bar width**
 - [x] **Supports CDM compatibility** (no proprietary modules distributed)

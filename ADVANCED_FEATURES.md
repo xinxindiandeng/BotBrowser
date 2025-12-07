@@ -152,6 +152,7 @@ Sophisticated noise with consistency algorithms. Configure everything through CL
 
 - **Canvas**: `--bot-config-noise-canvas=true`
 - **WebGL image**: `--bot-config-noise-webgl-image=true`
+- **WebGPU**: Deterministic noise is injected into WebGPU canvases by default, so GPU-only probes inherit the same reproducible noise field without extra flags
 - **AudioContext**: `--bot-config-noise-audio-context=true`
 - **ClientRects/TextRects**: `--bot-config-noise-client-rects=true`, `--bot-config-noise-text-rects=true`
 - **Deterministic seeds (ENT Tier2 feature)**: `--bot-noise-seed=1.05` (1.0–1.2 range) let you pick reproducible yet distinct noise fields for Canvas 2D/WebGL/WebGPU imagery, text metrics/HarfBuzz layout, ClientRects, and offline audio hashes so each seed behaves like its own fingerprint ID.
@@ -248,6 +249,7 @@ Advanced font rendering with consistent results across hosts.
 - Multi-language support (CJK/RTL/emoji)
 - Platform-specific font metrics
 - Consistent text measurement across workers
+- DOM text renders exclusively from the embedded Windows/macOS/Linux/Android font bundles so layouts never fall through to host fonts on the underlying machine
 
 > **Implementation Detail:** Low‑level rendering paths in Skia (2D/Canvas) and HarfBuzz (text shaping) are tuned where needed to align metrics and glyph shaping across OS targets. We also apply targeted WebGL/WebGPU parameter controls to keep visual output stable across contexts.
 
@@ -418,6 +420,7 @@ Comprehensive browser and OS emulation.
 | **Platform Detection** | Windows/macOS/Android emulation with authentic APIs |
 | **Browser Features** | Debugger disabling, CDP leak blocking, Chrome-specific behavior |
 | **Font System** | Built-in cross-platform fonts, Blink features, authentic fallback chains |
+| **Client Hints** | DPR, device-memory, UA-CH, and other CH values stay aligned with JavaScript-visible metrics so headers and runtime data always match |
 
 ### Location & Time Management
 Precise geolocation and temporal controls.

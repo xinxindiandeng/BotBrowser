@@ -116,14 +116,15 @@ Examples: [Playwright](examples/playwright/) • [Puppeteer](examples/puppeteer/
 ## 🛠️ Advanced Capabilities
 > **Professional-grade browser technology** through multi-layer fingerprint consistency, network-stack control, and automation-hardening.
 
-- **Multi‑Layer Consistency:** Canvas/WebGL/Text metrics with low‑level Skia/HarfBuzz tuning and targeted WebGL/WebGPU controls
-- **Clean Automation:** CDP/WebDriver hardening, Chrome‑like behavior, and framework‑less early hooks via `--bot-script`
-- **Configurability:** 30+ CLI overrides, per‑context proxies (ENT Tier1) with automatic geo‑detection, and session tools (cookies/bookmarks/title)
-- **Headless ↔ GUI Parity:** Stable GPU/WebGPU/media signals and consistent behavior across browser modes
-- **Performance Controls:** Precise FPS simulation, memory/storage timing, and GPU micro‑benchmarks for realistic profiles; runtime timing scaling (ENT Tier1) and deterministic noise seeds (ENT Tier2)
-- **Focus & Session Control:** Always-active tab emulation, configurable WebRTC ICE servers, and expanded media decoder reporting for authentic runtime signals
-- **Network & Proxy Enhancements:** Per-context proxies (ENT Tier1) with auto geo detection; UDP-over-SOCKS5 tunnel for QUIC/STUN in ENT Tier3; ICE presets optional when UDP is available
-> **Professional-grade browser technology** through sophisticated multi-layer fingerprint consistency and cross-platform compatibility systems
+- **Multi‑Layer Noise**: Canvas/WebGL/WebGPU/Text/Audiocontext surfaces share deterministic, cross-worker noise with low-level Skia/HarfBuzz tuning
+- **Automation Hardening**: CDP/WebDriver artifact scrubbing, framework-less `--bot-script`, and console suppression PRO toggles keep detectors blind
+- **Configurable Stack**: 30+ CLI overrides, ENT Tier1 per-context proxies with auto geo, and session tooling (cookies/bookmarks/title/history)
+- **Typography Fidelity**: DOM text renders from embedded Windows/macOS/Android font packs so host fonts never leak during cross-OS simulation
+- **Client Hints Lockstep**: DPR/device-memory/UA-CH headers match JavaScript-visible values for airtight CH vs JS parity
+- **Headless ↔ GUI Parity**: Identical GPU/WebGPU/media signals across browser modes for stable automation baselines
+- **Performance Controls**: Precision FPS/memory timings plus ENT Tier1 timing/seed controls for reproducible benchmarks
+- **Focus & Session Control**: Always-active tabs, configurable ICE presets, and expanded media reporting keep sessions believable
+- **Network Enhancements**: ENT Tier1 per-context proxies, UDP-over-SOCKS5 (ENT Tier3), and SOCKS5H DNS-in-tunnel behavior for clean geo signals
 
 <details>
 <summary><strong>Coverage Map: Detection Surfaces → Capabilities → Evidence</strong></summary>
@@ -135,11 +136,14 @@ This map links common detection surfaces to BotBrowser capabilities and the exac
 | navigator.webdriver | Removed/hidden at engine level | [ADVANCED_FEATURES#Chrome Behavior Emulation](ADVANCED_FEATURES.md#chrome-behavior-emulation) |
 | JS Execution Isolation | CDP/WebDriver artifact blocking | [ADVANCED_FEATURES#Playwright/Puppeteer Integration](ADVANCED_FEATURES.md#playwright-puppeteer-integration) |
 | Canvas/WebGL/WebGPU/Audio/Text metrics | Deterministic noise + parameter controls and cross‑worker consistency | [ADVANCED_FEATURES#Graphics & Rendering Engine](ADVANCED_FEATURES.md#graphics-rendering-engine) |
+| WebGPU fingerprinting | Canvas/WebGPU share deterministic noise so GPU-only probes like [WebBrowserTools](https://webbrowsertools.com/webgpu-fingerprint/) stay consistent | [CHANGELOG#2025-12-08](CHANGELOG.md#2025-12-08) |
 | Fonts/Text | Built-in fonts + HarfBuzz shaping | [ADVANCED_FEATURES#Cross-Platform Font Engine](ADVANCED_FEATURES.md#cross-platform-font-engine) |
+| DOM Font Enumeration | DOM text renders from embedded Windows/macOS/Linux/Android font bundles; host fonts never leak | [ADVANCED_FEATURES#Cross-Platform Font Engine](ADVANCED_FEATURES.md#cross-platform-font-engine) |
 | MediaDevices | Profile-based device spoofing | [Profile Configs](profiles/PROFILE_CONFIGS.md) |
 | WebRTC | SDP/ICE manipulation, candidate filtering | [ADVANCED_FEATURES#WebRTC Leak Protection](ADVANCED_FEATURES.md#webrtc-leak-protection) |
 | UA Congruence | Brand + full-version alignment | [CLI_FLAGS#Profile Configuration Override Flags](CLI_FLAGS.md#⚙️-profile-configuration-override-flags) |
 | UA Congruence | Brand + full-version alignment | [CLI_FLAGS#Profile Configuration Override Flags](CLI_FLAGS.md#profile-configuration-override-flags) |
+| Client Hints vs JS metrics | CH DPR/device-memory/UA-CH stay in lockstep with JavaScript-visible values | [ADVANCED_FEATURES#Browser & OS Fingerprinting](ADVANCED_FEATURES.md#browser--os-fingerprinting) |
 | Headless Parity | GPU/WebGPU/media signals stable | [ADVANCED_FEATURES#Headless & Incognito Compatibility](ADVANCED_FEATURES.md#headless-incognito-compatibility) |
 | DNS Leaks | SOCKS5 DNS-through-proxy | [ADVANCED_FEATURES#Enhanced Proxy System](ADVANCED_FEATURES.md#enhanced-proxy-system) |
 | HTTP Headers | Chrome-like headers, HTTP/2/3 behavior | [ADVANCED_FEATURES#Chrome Behavior Emulation](ADVANCED_FEATURES.md#chrome-behavior-emulation) |
