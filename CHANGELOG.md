@@ -3,6 +3,15 @@
 > **Research scope:** Entries in this changelog describe features evaluated in authorized labs and defensive benchmarking programs. Follow the [Legal Disclaimer](DISCLAIMER.md) and [Responsible Use Guidelines](RESPONSIBLE_USE.md). We work with security vendors to investigate any misuse, so report concerns to [botbrowser@bk.ru](mailto:botbrowser@bk.ru).
 
 
+## [2025-12-22]
+### Improvements
+- **FPS control precision**: Fine‑tuned frame rate simulation logic to deliver more accurate and stable FPS emulation, improving consistency when targeting specific refresh rates and reducing jitter in timing-sensitive scenarios.
+
+### Fixes
+- **Iframe content dimensions**: Resolved an edge case where iframe content dimensions (height/width) could be reported as zero in certain layout conditions. Frame boundaries now render consistently.
+- **navigator.plugins empty state**: Fixed a scenario where `navigator.plugins` could return an empty collection despite the profile defining valid plugins. Plugin enumeration is now stable across sessions.
+
+
 ## [2025-12-17]
 ### Major
 - **Chromium Core → 143.0.7499.147**: Updated the engine to 143.0.7499.147 to stay aligned with the latest Chrome Stable. This keeps Web Platform behavior, DevTools schemas, and version keyed heuristics in lockstep with upstream.
