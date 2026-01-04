@@ -92,7 +92,7 @@
 - **Screen metrics from profile**: `screen.width/height` now reliably come from the profile on every path, avoiding one‑off host reads in edge cases.
 
 ### Improvements
-- **SOCKS5H support**: Name resolution for SOCKS5H is more robust across platforms and failure modes. DNS resolution stays in the tunnel and connection setup is snappier on flaky endpoints.
+- **SOCKS5H support**: Added robust support for SOCKS5H protocol across platforms and failure modes. Hostname resolution remains within proxy tunnels, avoiding DNS exposure, with improved connection setup on flaky endpoints.
 - **Noise‑seed stability**: Noise seeds adapt more naturally to environment changes so fingerprints remain consistent across runs while keeping per‑profile diversity.
 
 ---
@@ -102,7 +102,7 @@
 - **Runtime timing scaler (ENT Tier1)**: `--bot-time-scale` compresses `performance.now()` deltas to emulate lower CPU load profiles for timing-sensitive research flows.
 - **Deterministic noise seed (ENT Tier2)**: `--bot-noise-seed` deterministically augments privacy variance across Canvas 2D/WebGL/WebGPU imagery, text metrics/HarfBuzz layout, ClientRects, and offline audio hashes so each seed behaves like a reproducible fingerprint ID while remaining stable across sessions.
 - **UDP over SOCKS5 (ENT Tier3)**: Automatic UDP associate for QUIC and STUN over SOCKS5 proxies; ICE presets often unnecessary when UDP is available.
-- **socks5h proxy support**: Added support for `socks5h://` endpoints to resolve hostnames through the proxy tunnel.
+- **socks5h proxy support**: Added support for `socks5h://` endpoints for tunnel-based hostname resolution.
 
 ### Fixes
 - **Android text autosizing**: Adjusted Android profile emulation to avoid overly small fonts when Chrome 143’s `ForceOffTextAutosizing` defaults to enabled.

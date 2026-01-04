@@ -111,7 +111,7 @@ All configurations are embedded in the `configs` field inside your profile JSON 
 > ```bash
 > # Embedded credentials (recommended)
 > --proxy-server="http://username:password@proxy.example.com:8080"
-> # SOCKS5H resolves hostnames through the proxy tunnel
+> # SOCKS5H for tunnel-based hostname resolution
 > --proxy-server="socks5h://username:password@proxy.example.com:1080"
 > ```
 >

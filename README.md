@@ -104,7 +104,6 @@ await page.goto('https://abrahamjuliot.github.io/creepjs/');
 - Use `--user-data-dir` with a unique temporary folder to avoid conflicts with running Chromium instances
 - Prefer `--proxy-server` or per-context proxies (ENT Tier1); auto timezone/locale detection applies in both cases
 - Avoid framework-specific proxy/auth options (e.g., `page.authenticate()`), which disable BotBrowser's geo-detection and may leak location information
-- `socks5h://` is supported when you need hostnames resolved by the proxy
 
 Examples: [Playwright](examples/playwright/) • [Puppeteer](examples/puppeteer/)
 
@@ -118,13 +117,13 @@ Examples: [Playwright](examples/playwright/) • [Puppeteer](examples/puppeteer/
 
 - **Multi Layer Noise**: Canvas, WebGL, WebGPU, text, and AudioContext surfaces share deterministic, cross-worker noise with low-level Skia and HarfBuzz tuning so observers cannot correlate runs
 - **Execution Environment Isolation**: Clean execution contexts prevent framework artifacts from exposing privacy leaks, framework-less `--bot-script`, and console suppression PRO toggles maintain consistent fingerprints across all execution modes
-- **Configurable Stack**: 30+ CLI overrides, per-context proxies with auto geo (ENT Tier1), and session tooling (cookies, bookmarks, title, history) make privacy scripting flexible
+- **Configurable Stack**: 30+ CLI overrides, per-context proxies (ENT Tier1) with auto geo, and session tooling (cookies, bookmarks, title, history) make privacy scripting flexible
 - **Typography Fidelity**: DOM text renders from embedded Windows, macOS, and Android font packs so host fonts never leak during cross-OS simulation
 - **Client Hints Lockstep**: DPR, device-memory, and UA-CH headers match JavaScript-visible values to keep header data in sync with runtime fingerprints
 - **Headless ↔ GUI Parity**: Identical GPU, WebGPU, and media signals across browser modes so privacy regression tests remain stable
-- **Performance Controls**: Precision FPS (ENT Tier2) and memory timings plus timing controls (ENT Tier1) and noise seeds for reproducible privacy benchmarks (ENT Tier2)
+- **Performance Controls**: Precision FPS (ENT Tier2) and memory timings plus timing controls (ENT Tier1) and noise seeds (ENT Tier2) for reproducible privacy benchmarks
 - **Focus & Session Control**: Always-active tabs, configurable ICE presets, and expanded media reporting keep privacy sessions believable
-- **Network Enhancements**: (ENT Tier1) per-context proxies, optional local DNS solver (ENT Tier1), UDP-over-SOCKS5 (ENT Tier3), and SOCKS5H DNS in tunnel behavior for clean geo signals
+- **Network Enhancements**: per-context proxies (ENT Tier1) and optional local DNS solver (ENT Tier1), UDP-over-SOCKS5 (ENT Tier3), and SOCKS5H protocol support for tunnel-based resolution
 
 <details>
 <summary><strong>Fingerprint Consistency Implementation: Privacy Controls → Technical Design → Validation</strong></summary>
@@ -144,7 +143,7 @@ This reference maps privacy protection goals to BotBrowser implementation detail
 | User agent coherence | Browser brand and version consistency prevents UA string from revealing platform differences | [CLI_FLAGS#Profile Configuration Override Flags](CLI_FLAGS.md#profile-configuration-override-flags) |
 | Header to API parity | Client Hints headers DPR, device-memory, and UA-CH align with JavaScript reported values preventing header based identification | [ADVANCED_FEATURES#Browser & OS Fingerprinting](ADVANCED_FEATURES.md#browser--os-fingerprinting) |
 | Execution mode consistency | GPU, WebGPU, and media signals remain identical whether running headless or in GUI mode | [ADVANCED_FEATURES#Headless & Incognito Compatibility](ADVANCED_FEATURES.md#headless-incognito-compatibility) |
-| DNS privacy | DNS can stay in-tunnel via SOCKS5H, or use the local DNS solver (ENT Tier1) to improve privacy and speed while avoiding DNS poisoning and provider DNS limits | [CLI_FLAGS#Enhanced Proxy Configuration](CLI_FLAGS.md#enhanced-proxy-configuration) |
+| DNS privacy | Use local DNS solver (ENT Tier1) for private resolution that avoids DNS leaks and provider restrictions, or use SOCKS5H to keep DNS within proxy tunnels | [CLI_FLAGS#Enhanced Proxy Configuration](CLI_FLAGS.md#enhanced-proxy-configuration) |
 | Public IP discovery | Customizable IP lookup backend for geo derivation via `--bot-ip-service` (supports comma-separated endpoints; BotBrowser races them and uses the fastest successful response) | [CLI_FLAGS#Enhanced Proxy Configuration](CLI_FLAGS.md#enhanced-proxy-configuration) |
 | Protocol conformance | HTTP/2 and HTTP/3 behavior matches Chrome specifications preventing protocol based differentiation | [ADVANCED_FEATURES#Chrome Behavior Emulation](ADVANCED_FEATURES.md#chrome-behavior-emulation) |
 | TLS fingerprint consistency | JA3, JARM, and ALPN parameters optimized for uniform TLS negotiation across platforms | [CHANGELOG](CHANGELOG.md) |
