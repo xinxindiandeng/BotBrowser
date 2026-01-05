@@ -1181,7 +1181,7 @@ Example:
 ### Major Update
 - **GPU Emulation on Headless Servers:** Introduced full emulation of GPU-related fingerprints on devices without dedicated GPUs. This allows **VPS servers (Linux, Windows)** without GPUs to accurately simulate GPU information, including `navigator.gpu`, `GPUAdapter`, `GPUAdapterInfo`, `GPUDevice`, `WebGLRenderingContext`, and `WebGL2RenderingContext`. This significantly reduces GPU rental costs while supporting GPU-sensitive testing systems, such as the latest **hCaptcha** environments, which validate `navigator.gpu`.
 
-*These GPU emulation capabilities are for authorized academic benchmarking only, not intended for use against production services.*
+*These GPU emulation capabilities are for authorized fingerprint protection and privacy research only, not intended for use against production services.*
 
 ### Added
 - **GPUAdapterInfo and WGSLLanguageFeatures Tracking:** Added support for tracking **GPUAdapterInfo** and **WGSLLanguageFeatures**, ensuring comprehensive GPU-related data coverage.
@@ -1302,7 +1302,7 @@ Example:
 - Resolved **CDM issue**, enhancing browser environment security.
 
 ### Added
-- Successfully resolved **[Fake Vision](https://fv.pro)** compatibility issues, enhancing academic testing environment capabilities. [Test Code](tests/tests/antibots/fvpro.spec.ts), [▶️ Test Result (fv.pro)](https://botswin.github.io/BotBrowser/video_player/index.html?video=https://raw.githubusercontent.com/botswin/BotBrowser/main/tests/test-results/fvpro-test-fv-pro-BotBrowser-antibots/video.webm)
+- Successfully resolved **[Fake Vision](https://fv.pro)** compatibility issues, enhancing fingerprint protection validation capabilities. [Test Code](tests/tests/antibots/fvpro.spec.ts), [▶️ Test Result (fv.pro)](https://botswin.github.io/BotBrowser/video_player/index.html?video=https://raw.githubusercontent.com/botswin/BotBrowser/main/tests/test-results/fvpro-test-fv-pro-BotBrowser-antibots/video.webm)
 
 ---
 

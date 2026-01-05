@@ -1,6 +1,6 @@
 # WizzAir Compatibility Testing with Docker
 
-For Academic and Authorized Testing Environments. See the project [Legal Disclaimer](../../DISCLAIMER.md) and [Responsible Use Guidelines](../../RESPONSIBLE_USE.md) for usage boundaries.
+For Fingerprint Protection and Privacy Research. See the project [Legal Disclaimer](../../DISCLAIMER.md) and [Responsible Use Guidelines](../../RESPONSIBLE_USE.md) for usage boundaries.
 
 ## Project Overview
 
@@ -9,7 +9,7 @@ This repository contains a Docker setup for validating fingerprint protection on
 1. Launches BotBrowser in headless mode: **no XDISPLAY or GPU required**: while simulating a full desktop environment.
 2. Performs compatibility validation on WizzAir's interface over a date range.
 3. Analyzes API responses for compatibility assessment.
-4. Saves analysis data to `flight_data/` and screenshots to `screenshots/` for academic review.
+4. Saves analysis data to `flight_data/` and screenshots to `screenshots/` for privacy research review.
 5. The target site is protected by **Kasada**, and this workflow demonstrates how BotBrowser prevents fingerprint collection in real-world tracking scenarios.
 
 ---
@@ -24,7 +24,7 @@ This repository contains a Docker setup for validating fingerprint protection on
 ├── requirements.txt
 ├── profile/        # Place your .enc profile here
 ├── flight_data/    # Analysis data output per date
-└── screenshots/    # Screenshots for academic review
+└── screenshots/    # Screenshots for privacy research review
 ```
 
 > **Tip:** Review `Dockerfile` and `docker-compose.yml` for configuration options.

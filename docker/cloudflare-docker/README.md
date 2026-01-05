@@ -1,6 +1,6 @@
 # Cloudflare Compatibility Testing with Docker
 
-For Academic and Authorized Testing Environments. See the project [Legal Disclaimer](../../DISCLAIMER.md) and [Responsible Use Guidelines](../../RESPONSIBLE_USE.md) for usage boundaries.
+For Fingerprint Protection and Privacy Research. See the project [Legal Disclaimer](../../DISCLAIMER.md) and [Responsible Use Guidelines](../../RESPONSIBLE_USE.md) for usage boundaries.
 
 ## Project Overview
 

@@ -554,7 +554,7 @@ BotBrowser’s capabilities support multiple research applications in authorized
 
 **Authorized Environments Only:**
 - University and institutional research projects
-- Controlled security testing environments
+- Controlled privacy research environments
 - Systems you own or have explicit permission to test
 
 **Prohibited Uses:**

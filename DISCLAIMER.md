@@ -15,7 +15,7 @@ BotBrowser is a **privacy protection technology** designed to prevent fingerprin
 
 ## AGE RESTRICTION
 
-This software is intended for use by adults (18+) in professional, academic, or research settings. Minors may only use this software under direct supervision of qualified educators or researchers as part of authorized academic programs.
+This software is intended for use by adults (18+) in professional, privacy research, or research settings. Minors may only use this software under direct supervision of qualified educators or researchers as part of authorized privacy research programs.
 
 ## AUTHORIZED USE CASES
 
@@ -39,7 +39,7 @@ To qualify as authorized use, ALL of the following must be true:
 3. **REQUIRED:** No real user data or credentials used
 4. **REQUIRED:** Compliance with all applicable laws and institutional policies
 5. **REQUIRED:** No violation of any terms of service
-6. **REQUIRED:** Results used solely for academic/research purposes
+6. **REQUIRED:** Results used solely for fingerprint protection and privacy research purposes
 
 **If you cannot confirm ALL of the above, STOP and seek legal counsel.**
 

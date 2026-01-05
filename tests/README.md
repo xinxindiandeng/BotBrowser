@@ -7,7 +7,7 @@ Demonstrates controlled fingerprint protection validation using [Playwright](htt
 
 ## Research Environment Setup
 
-All tests utilize **controlled network environments** with appropriate proxy configurations for academic analysis. Testing should be conducted through authorized institutional networks.
+All tests utilize **controlled network environments** with appropriate proxy configurations for privacy research and fingerprint protection validation. Testing should be conducted through authorized institutional networks.
 
 ---
 
@@ -76,7 +76,7 @@ npx playwright show-report
 
 ## Research Methodology
 
-**Purpose:** Controlled fingerprint protection validation scripts for academic study.
+**Purpose:** Controlled fingerprint protection validation scripts for fingerprint protection and privacy research.
 
 **Framework:** All validation must be conducted within authorized environments that comply with institutional ethics guidelines, applicable laws, and protocols.
 

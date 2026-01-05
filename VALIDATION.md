@@ -404,7 +404,7 @@ Detection System Tests (200+ scenarios)
 
 **Research Ethics:** This research contributes to web compatibility standards and fingerprint protection validation through controlled environment testing using publicly accessible interfaces only.
 
-**GitHub Policy Compliance:** This repository is intended for academic research and is not designed for production use against third-party services without explicit authorization.
+**GitHub Policy Compliance:** This repository is intended for fingerprint protection and privacy research and is not designed for production use against third-party services without explicit authorization.
 
 ---
 

@@ -132,7 +132,7 @@ Close BotBrowser. Your recording is saved to `/tmp/canvaslab.jsonl`. You can now
 | **Source Code Attribution** | Find which tracking libraries are calling which Canvas APIs by looking at source locations |
 | **Privacy Protection Validation** | Make sure BotBrowser's defenses work the same way on all platforms—Windows, macOS, Linux |
 | **Privacy Testing** | Verify that privacy protections keep working after BotBrowser updates |
-| **Privacy Research** | Study real-world tracking techniques with complete records and source information for academic work |
+| **Privacy Research** | Study real-world tracking techniques with complete records and source information for fingerprint protection research |
 
 ---
 

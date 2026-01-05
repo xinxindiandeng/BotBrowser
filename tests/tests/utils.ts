@@ -3,7 +3,7 @@
  *
  * Helper functions for BotBrowser test suite.
  * - Provides common testing utilities (sleep, frame waiting, random data generation)
- * - For academic research test automation purposes
+ * - For fingerprint protection and privacy research purposes
  * - All generated data is synthetic/invalid for testing only
  *
  * See https://github.com/botswin/BotBrowser/blob/main/tests/README.md

@@ -1,6 +1,6 @@
 # Docker Deployment
 
-For Academic and Authorized Testing Environments. Refer to the project [Legal Disclaimer](../DISCLAIMER.md) and [Responsible Use Guidelines](../RESPONSIBLE_USE.md) when deploying containers.
+For Fingerprint Protection and Privacy Research. Refer to the project [Legal Disclaimer](../DISCLAIMER.md) and [Responsible Use Guidelines](../RESPONSIBLE_USE.md) when deploying containers.
 
 This guide explains how to deploy BotBrowser using Docker and Docker Compose for authorized fingerprint protection validation.
 
@@ -83,7 +83,7 @@ docker-compose logs -f botbrowser
 
 ### Integration Examples
 
-⚠️ Integration examples with Playwright and Puppeteer are for academic research only. Unauthorized scraping or production misuse is prohibited.
+⚠️ Integration examples with Playwright and Puppeteer are for fingerprint protection and privacy research only. Unauthorized scraping or production misuse is prohibited.
 
 **Playwright**
 

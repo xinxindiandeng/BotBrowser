@@ -1,15 +1,15 @@
 # BotBrowser Patch Examples
 
-For Academic and Security Analysis Purposes.
+For Fingerprint Protection and Privacy Research.
 
-> These are selected examples from BotBrowser's internals for academic study and security analysis. The full core remains proprietary for compatibility testing.
+> These are selected examples from BotBrowser's internals for fingerprint protection and privacy research. The full core remains proprietary for compatibility testing.
 
 BotBrowser includes proprietary enhancements built on top of Chromium, developed in-house for fingerprint protection and privacy research.
 
 Only the GUI ([BotBrowserConsole](https://github.com/botswin/BotBrowser/tree/main/console)) is open source.
-The patches here are select examples published to illustrate techniques for academic and security analysis without exposing the full engine.
+The patches here are select examples published to illustrate techniques for fingerprint protection and privacy research without exposing the full engine.
 
-⚠️ Usage policy: These examples are for academic study, security analysis, and authorized testing environments only. Use in compliance with institutional policies and applicable laws.
+⚠️ Usage policy: These examples are for fingerprint protection, privacy research, and authorized analysis only. Use in compliance with institutional policies and applicable laws.
 
 ---
 
@@ -27,9 +27,9 @@ The patches here are select examples published to illustrate techniques for acad
   2. V8-level study of tracking data collection and validation
   3. Compatibility testing experience in controlled environments
 
-## Contact (Academic Inquiries Only)
+## Contact (Privacy Research Inquiries Only)
 
-For academic collaboration or licensing review, please reach out:
+For fingerprint protection and privacy research collaboration or licensing review, please reach out:
 
 <table>
   <tr><td>Email</td><td><a href="mailto:botbrowser@bk.ru">botbrowser@bk.ru</a></td></tr>

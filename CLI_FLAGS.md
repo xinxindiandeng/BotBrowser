@@ -1,6 +1,6 @@
 # BotBrowser CLI Flags Reference
 
-For Academic and Authorized Testing Environments.
+For Fingerprint Protection and Privacy Research.
 
 This document explains BotBrowser's CLI configuration system. These flags extend Chromium and provide runtime control over fingerprints to prevent tracking system collection without modifying profile files. For terms of use, see the [Legal Disclaimer](DISCLAIMER.md) and [Responsible Use Guidelines](RESPONSIBLE_USE.md).
 
@@ -59,7 +59,7 @@ Specify a directory containing multiple `.enc` profile files. BotBrowser will ra
 ### Enhanced `--proxy-server` with Embedded Credentials
 BotBrowser extends the standard `--proxy-server` flag to accept embedded credentials in the URL.
 
-⚠️ **Important**: For authorized network testing only. Do not use for unauthorized data collection.
+⚠️ **Important**: For authorized privacy research and fingerprint protection only. Do not use for unauthorized data collection.
 
 ```bash
 # HTTP/HTTPS proxy with credentials

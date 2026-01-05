@@ -1,10 +1,10 @@
 # 📖 BotBrowser Profile Configuration Guide
 
-For Academic and Authorized Testing Environments.
+For Fingerprint Protection and Privacy Research.
 
 This guide explains BotBrowser's fingerprint-customization system that prevents tracking system fingerprint collection. Configure synthetic profiles and use dynamic CLI overrides for authorized privacy testing.
 
-⚠️ **Usage Policy:** This configuration system is designed for academic study, security analysis, and authorized testing only. Use in compliance with institutional policies and applicable laws.
+⚠️ **Usage Policy:** This configuration system is designed for fingerprint protection, privacy research, and authorized analysis only. Use in compliance with institutional policies and applicable laws.
 
 > **CLI-First Configuration:** Use [`--bot-config-*` flags](../CLI_FLAGS.md#profile-configuration-override-flags) for runtime fingerprint control without editing encrypted profiles. These carry the highest priority.
 
@@ -56,7 +56,7 @@ chromium-browser \
 
 ## ⚠️ Important: Profile Data Integrity
 
-Profile data uses synthetic/aggregated configurations. Unless you are certain about the impact, avoid overriding fingerprint properties because defaults provide the most protected behavior for academic testing.
+Profile data uses synthetic/aggregated configurations. Unless you are certain about the impact, avoid overriding fingerprint properties because defaults provide the most protected behavior.
 
 ## How to Apply Configuration
 
@@ -92,8 +92,8 @@ All configurations are embedded in the `configs` field inside your profile JSON 
 | `location`                      | `auto` = IP-based; `real` = system (GPS); object = custom coordinates (`lat`, `lon`). | `auto`    |
 | `browserBrand` (PRO feature)    | override for `navigator.userAgentData.brands` and related UA fields. Supports chromium, chrome, edge, brave, opera. | `chrome`    |
 | `brandFullVersion` (PRO feature)| Optional brand-specific full version string for UA-CH tuples (Edge/Opera cadences). | `""`    |
-| `injectRandomHistory` (PRO feature) | Optionally adds synthetic navigation history for academic experiments in browser state testing. | `false`    |
-| `disableDebugger`               | Prevents unintended interruptions from JavaScript debugger statements during academic research workflows. | `true`     |
+| `injectRandomHistory` (PRO feature) | Optionally adds synthetic navigation history for fingerprint protection in browser state testing. | `false`    |
+| `disableDebugger`               | Prevents unintended interruptions from JavaScript debugger statements during fingerprint protection workflows. | `true`     |
 | `keyboard`                      | Choose keyboard fingerprint source: `profile` (emulated from profile) or `real` (use system keyboard). | `profile` |
 | `mediaTypes`                    | Media types behavior: `expand` (prefer local decoders), `profile` (profile-defined list), `real` (native system). | `expand` |
 | `alwaysActive` (PRO feature)    | Keep windows/tabs in an active state to suppress `blur`/`visibilitychange` events and `document.hidden=true`. | `true` |
@@ -145,11 +145,11 @@ All configurations are embedded in the `configs` field inside your profile JSON 
 
 | Field               | Description                             | Default |
 | ------------------- | --------------------------------------- | ------- |
-| `noiseCanvas`       | Introduce controlled variance to Canvas for academic fingerprint resilience testing. | `true`  |
-| `noiseWebglImage`   | Introduce controlled variance to WebGL for academic fingerprint resilience testing.   | `true`  |
-| `noiseAudioContext` | Introduce controlled variance to AudioContext for academic fingerprint resilience testing.  | `true`  |
-| `noiseClientRects`  | Introduce controlled variance to client rects for academic fingerprint resilience testing.  | `false` |
-| `noiseTextRects`    | Introduce controlled variance to TextRects for academic fingerprint resilience testing.     | `true`  |
+| `noiseCanvas`       | Introduce controlled variance to Canvas for fingerprint protection. | `true`  |
+| `noiseWebglImage`   | Introduce controlled variance to WebGL for fingerprint protection.   | `true`  |
+| `noiseAudioContext` | Introduce controlled variance to AudioContext for fingerprint protection.  | `true`  |
+| `noiseClientRects`  | Introduce controlled variance to client rects for fingerprint protection.  | `false` |
+| `noiseTextRects`    | Introduce controlled variance to TextRects for fingerprint protection.     | `true`  |
 
 ### Timing & Deterministic Noise Controls
 
@@ -227,19 +227,19 @@ All configurations are embedded in the `configs` field inside your profile JSON 
     // Speech voices: 'profile' = profile’s synthetic voices; 'real' = system voices
     "speechVoices": "profile",
 
-    // noiseCanvas: Introduce controlled variance to Canvas for academic fingerprint resilience testing
+    // noiseCanvas: Introduce controlled variance to Canvas for fingerprint protection
     "noiseCanvas": true,
 
-    // noiseWebglImage: Introduce controlled variance to WebGL for academic fingerprint resilience testing
+    // noiseWebglImage: Introduce controlled variance to WebGL for fingerprint protection
     "noiseWebglImage": true,
 
-    // noiseAudioContext: Introduce controlled variance to AudioContext for academic fingerprint resilience testing
+    // noiseAudioContext: Introduce controlled variance to AudioContext for fingerprint protection
     "noiseAudioContext": true,
 
-    // noiseClientRects: Introduce controlled variance to client rects for academic fingerprint resilience testing
+    // noiseClientRects: Introduce controlled variance to client rects for fingerprint protection
     "noiseClientRects": false,
 
-    // noiseTextRects: Introduce controlled variance to TextRects for academic fingerprint resilience testing
+    // noiseTextRects: Introduce controlled variance to TextRects for fingerprint protection
     "noiseTextRects": true,
 
     // browserBrand: override for `navigator.userAgentData.brands` and related UA fields. Supports "chromium", "chrome", "edge", "brave", "opera"
@@ -248,10 +248,10 @@ All configurations are embedded in the `configs` field inside your profile JSON 
     // brandFullVersion: optional brand-specific full version string for UA-CH tuples when the vendor’s cadence diverges
     "brandFullVersion": "142.0.3595.65",
 
-    // injectRandomHistory: Optionally adds synthetic navigation history for academic experiments in browser state testing
+    // injectRandomHistory: Optionally adds synthetic navigation history for fingerprint protection in browser state testing
     "injectRandomHistory": false,
 
-    // disableDebugger: Prevents unintended interruptions from JavaScript debugger statements during academic research workflows
+    // disableDebugger: Prevents unintended interruptions from JavaScript debugger statements during fingerprint protection workflows
     "disableDebugger": true,
 
     // disableConsoleMessage: Suppress console.* output forwarded through CDP logging

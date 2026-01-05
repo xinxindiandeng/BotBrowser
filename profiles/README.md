@@ -46,10 +46,10 @@ All appear as different users on the same device type.
 
 ## ⚠️ Profile Types
 
-### Demo Profiles (Educational Testing Only)
+### Demo Profiles (Privacy Research Only)
 
 **Limitations**
-- Limited-time educational testing only
+- Limited-time privacy research use only
 - No headless mode support
 - No framework integration
 - No extension loading
@@ -61,7 +61,7 @@ All appear as different users on the same device type.
 - Unique configurations for controlled studies
 - Privacy-compliant synthetic data
 - Based on aggregated device/browser patterns
-- Suitable for authorized academic research
+- Suitable for authorized fingerprint protection and privacy research
 
 ### Access Premium Profiles
 
@@ -160,7 +160,7 @@ chromium \
 
 ## Key Features
 
-⚠️ **All features are intended for compatibility testing and academic research only, not for use in production against third-party services.**
+⚠️ **All features are intended for fingerprint protection and privacy research only, not for use in production against third-party services.**
 
 ### Unique Capabilities
 

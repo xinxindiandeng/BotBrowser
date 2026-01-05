@@ -1,6 +1,6 @@
 # BotBrowserConsole
 
-BotBrowserConsole is the desktop companion to **[BotBrowser](https://github.com/botswin/BotBrowser)**. It simplifies privacy-focused fingerprint configuration and multi-profile management for academic study and professional workflows. It also supports API-based extensions for custom requirements in authorized labs.
+BotBrowserConsole is the desktop companion to **[BotBrowser](https://github.com/botswin/BotBrowser)**. It simplifies privacy-focused fingerprint configuration and multi-profile management for fingerprint protection and privacy research workflows. It also supports API-based extensions for custom requirements in authorized labs.
 
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/e9c0b656-83b0-4be5-986e-d4bc3c04b4b5">
 
