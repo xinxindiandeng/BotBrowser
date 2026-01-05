@@ -311,7 +311,7 @@ All configurations are embedded in the `configs` field inside your profile JSON 
 
 ## Best Practices
 
-### Fingerprint Consistency
+### Fingerprint Protection
 - **Screen coordination:** Always adjust **window size** and **screen size** together to avoid suspicious fingerprint gaps
 - **Geographic alignment:** Match `timezone` and `location` to your proxy's region to avoid fingerprint inconsistencies
 - **Display accuracy:** Set a realistic **devicePixelRatio** based on the system being emulated:

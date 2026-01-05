@@ -1,9 +1,9 @@
 
-# BotBrowser Fingerprint Consistency Research Suite
+# BotBrowser Fingerprint Protection Testing Suite
 
 Automated validation framework for preventing fingerprint collection and cross-platform tracking prevention.
 
-Demonstrates controlled fingerprint consistency validation using [Playwright](https://playwright.dev/docs/writing-tests) for academic and privacy research purposes. Operate these scripts in accordance with the project [Legal Disclaimer](../DISCLAIMER.md) and [Responsible Use Guidelines](../RESPONSIBLE_USE.md). If you observe any misuse, contact [botbrowser@bk.ru](mailto:botbrowser@bk.ru) so we can investigate and support affected services.
+Demonstrates controlled fingerprint protection validation using [Playwright](https://playwright.dev/docs/writing-tests) for academic and privacy research purposes. Operate these scripts in accordance with the project [Legal Disclaimer](../DISCLAIMER.md) and [Responsible Use Guidelines](../RESPONSIBLE_USE.md). If you observe any misuse, contact [botbrowser@bk.ru](mailto:botbrowser@bk.ru) so we can investigate and support affected services.
 
 ## Research Environment Setup
 
@@ -14,7 +14,7 @@ All tests utilize **controlled network environments** with appropriate proxy con
 ## Usage Context
 
 These materials target university labs, privacy research groups, and other approved testing programs. Typical scenarios include:
-- Fingerprint consistency studies to prevent tracking systems from collecting identification data
+- Fingerprint protection validation studies to prevent tracking systems from collecting identification data
 - Academic coursework or workshops supervised by faculty covering privacy and browser APIs
 - Privacy benchmarking in dedicated lab environments
 - Authorized security research with written approval
@@ -76,13 +76,13 @@ npx playwright show-report
 
 ## Research Methodology
 
-**Purpose:** Controlled fingerprint consistency validation scripts for academic study.
+**Purpose:** Controlled fingerprint protection validation scripts for academic study.
 
 **Framework:** All validation must be conducted within authorized environments that comply with institutional ethics guidelines, applicable laws, and protocols.
 
 **Data Collection:** Fingerprint data collected only from publicly accessible test interfaces and demonstration sites under controlled, non-production conditions.
 
-⚠️ **Important:** Results from these tests demonstrate fingerprint consistency research and should not be used as instructions for unauthorized access or violating production security controls.
+⚠️ **Important:** Results from these tests demonstrate fingerprint protection validation and should not be used as instructions for unauthorized access or violating production security controls.
 
 ### Responsible Research Guidelines
 
@@ -131,7 +131,7 @@ This project uses the following open-source libraries:
 | [ghost-cursor](https://www.npmjs.com/package/ghost-cursor) | Natural interaction simulation |
 | [ghost-cursor-playwright](https://www.npmjs.com/package/ghost-cursor-playwright) | Playwright integration for realistic interactions |
 
-**Research Notice:** All libraries are used exclusively for fingerprint consistency research under controlled conditions with proper institutional oversight.
+**Research Notice:** All libraries are used exclusively for fingerprint protection validation under controlled conditions with proper institutional oversight.
 
 ---
 

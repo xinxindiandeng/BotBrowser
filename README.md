@@ -126,7 +126,7 @@ Examples: [Playwright](examples/playwright/) • [Puppeteer](examples/puppeteer/
 - **Network Enhancements**: per-context proxies (ENT Tier1) and optional local DNS solver (ENT Tier1), UDP-over-SOCKS5 (ENT Tier3), and SOCKS5H protocol support for tunnel-based resolution
 
 <details>
-<summary><strong>Fingerprint Consistency Implementation: Privacy Controls → Technical Design → Validation</strong></summary>
+<summary><strong>Fingerprint Protection Implementation: Privacy Controls → Technical Design → Validation</strong></summary>
 
 This reference maps privacy protection goals to BotBrowser implementation details and validation evidence.
 
@@ -148,7 +148,7 @@ This reference maps privacy protection goals to BotBrowser implementation detail
 | Protocol conformance | HTTP/2 and HTTP/3 behavior matches Chrome specifications preventing protocol based differentiation | [ADVANCED_FEATURES#Chrome Behavior Emulation](ADVANCED_FEATURES.md#chrome-behavior-emulation) |
 | TLS fingerprint consistency | JA3, JARM, and ALPN parameters optimized for uniform TLS negotiation across platforms | [CHANGELOG](CHANGELOG.md) |
 
-**Fingerprint Consistency Matrix: Cross‑Platform Coverage**
+**Fingerprint Protection Matrix: Cross‑Platform Coverage**
 
 | Category | Sample Capabilities |
 |----------|---------------------|
@@ -197,20 +197,20 @@ See [Mirror documentation](tools/mirror/) for detailed setup, testing procedures
 
 ---
 
-## Fingerprint Consistency Research
+## Fingerprint Protection Validation
 
-### Research Methodology
+### Validation Methodology
 
-Our fingerprint consistency research examines how standardized browser fingerprints prevent tracking systems from collecting tracking data to identify users across platforms. By maintaining identical fingerprints across operating systems, we demonstrate how privacy protection through consistency prevents the tracking methods that malicious observers rely on.
+Our fingerprint protection validation examines how standardized browser fingerprints prevent tracking systems from collecting tracking data to identify users across platforms. By maintaining identical fingerprints across operating systems, we demonstrate how privacy protection prevents the tracking methods that malicious observers rely on.
 
 > ⚠️ Research validation uses authorized test environments. See [DISCLAIMER](DISCLAIMER.md).
 
 <table cellspacing="0" cellpadding="8">
   <tr>
-    <td width="20%"><strong><a href="tests/tests/antibots/cloudflare.spec.ts">Cloudflare Consistency Research</a></strong></td>
+    <td width="20%"><strong><a href="tests/tests/antibots/cloudflare.spec.ts">Cloudflare Protection Validation</a></strong></td>
     <td width="30%"><a href="//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-cloudflare-turnstile">▶️ Validation Recording</a></td>
     <td width="20%"><strong><a href="tests/tests/antibots/creepjs.spec.ts">CreepJS Fingerprint Analysis</a></strong></td>
-    <td width="30%"><a href="//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-creepjs-creepjs">▶️ Desktop Consistency</a> / <a href="//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-creepjs-creepjs-Android">▶️ Android Profile</a></td>
+    <td width="30%"><a href="//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-creepjs-creepjs">▶️ Desktop Protection</a> / <a href="//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-creepjs-creepjs-Android">▶️ Android Profile</a></td>
   </tr>
   <tr>
     <td width="20%"><strong><a href="tests/tests/antibots/datadome.spec.ts">DataDome Detection Environment</a></strong></td>
@@ -220,14 +220,14 @@ Our fingerprint consistency research examines how standardized browser fingerpri
   </tr>
   <tr>
     <td width="20%"><strong><a href="tests/tests/antibots/perimeterx.spec.ts">PerimeterX Protection Study</a></strong></td>
-    <td width="30%"><a href="//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-perimeterx-zillow">▶️ Consistency Validation</a></td>
+    <td width="30%"><a href="//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-perimeterx-zillow">▶️ Protection Validation</a></td>
     <td width="20%"><strong><a href="tests/tests/antibots/pixelscan.spec.ts">Pixelscan Fingerprint Assessment</a></strong></td>
     <td width="30%"><a href="//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-pixelscan-pixelscan">▶️ Comprehensive Study</a></td>
   </tr>
 </table>
 
-### Cross-Platform Consistency Validation
-- **Windows Profile on macOS:** Fingerprint consistency maintained so privacy protections remain effective across platforms
+### Cross-Platform Protection Validation
+- **Windows Profile on macOS:** Fingerprint protection maintained so privacy defenses remain effective across platforms
 - **Android Emulation on Desktop:** Mobile API consistency enables fingerprint parity testing for cross-device privacy research
 - **Headless vs GUI Mode:** Identical fingerprint behavior ensures privacy validation results remain consistent across execution contexts
 

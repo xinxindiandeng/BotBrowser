@@ -2,13 +2,13 @@
 
 ## PRIVACY BROWSER USE DISCLAIMER
 
-**BotBrowser** is designed as a privacy-focused browser core for **academic research, fingerprint consistency analysis, and authorized privacy testing** that complies with all applicable **laws, regulations, and institutional ethics guidelines**. Review the companion [RESPONSIBLE_USE.md](RESPONSIBLE_USE.md) for operational expectations and responsible deployment practices.
+**BotBrowser** is designed as a privacy-focused browser core for **academic research, fingerprint protection validation, and authorized privacy testing** that complies with all applicable **laws, regulations, and institutional ethics guidelines**. Review the companion [RESPONSIBLE_USE.md](RESPONSIBLE_USE.md) for operational expectations and responsible deployment practices.
 
 ## TECHNOLOGY NOTICE
 
 BotBrowser is a **privacy protection technology** designed to prevent fingerprint based tracking and user identification across platforms. Like any browser technology, it can be used responsibly or irresponsibly depending on the user's intent and authorization.
 
-**Authorized Uses:** Privacy research, fingerprint consistency testing, cross platform browser compatibility analysis
+**Authorized Uses:** Privacy research, fingerprint protection testing, cross platform browser compatibility analysis
 **Prohibited Uses:** Unauthorized access, fraud, violation of terms of service
 
 **The developers have created this technology for privacy protection purposes and expect all users to deploy it in authorized contexts only.**
@@ -24,7 +24,7 @@ This software is intended for legitimate purposes only:
 - **University and institutional research projects**
 - **Security research in controlled environments**
 - **Browser compatibility studies**
-- **Fingerprint consistency analysis**
+- **Fingerprint protection validation**
 - **Ticketing system compatibility audits under authorized programs**
 - **Authorized penetration testing**
 - **Academic coursework and educational purposes**
